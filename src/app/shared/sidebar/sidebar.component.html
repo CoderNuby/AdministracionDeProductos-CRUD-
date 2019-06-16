@@ -1,12 +1,6 @@
-<div id="sidebar">
-  <nav class="nav flex-column">
-    <a class="nav-link active" href="#">Active</a>
-    <a class="nav-link" href="#">Link</a>
-    <a class="nav-link" href="#">Link</a>
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-  </nav>
-</div>
 <div class="sidebar">
-  
+  <nav class="nav flex-column">
+    <a *ngFor="let menu of _sidebar.menu" class="nav-link" routerLinkActive="active" [routerLink]="[menu.url]">{{menu.titulo}}</a>  
+  </nav>
 </div>
 

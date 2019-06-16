@@ -12,6 +12,10 @@ import { RegisterComponent } from './login/register.component';
 //Modulo
 import { PagesModule } from './pages/pages.module';
 
+//Servicios
+import { SettingsService } from './services/service.index';
+import { ServiceModule } from './services/service.module';
+
 
 @NgModule({
   declarations: [
@@ -22,9 +26,10 @@ import { PagesModule } from './pages/pages.module';
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    ServiceModule
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

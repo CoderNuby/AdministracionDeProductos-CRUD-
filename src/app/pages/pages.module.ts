@@ -9,12 +9,14 @@ import { SharedModule } from '../shared/shared.module';
 
 //ROUTES
 import { PAGES_ROUTES } from './pages.reoutes';
+import { PromesasComponent } from './promesas/promesas.component';
 
 @NgModule({
     declarations: [
         PagesComponent,
         DashboardComponent,
-        ProductosComponent
+        ProductosComponent,
+        PromesasComponent
     ],
     exports: [
         DashboardComponent,
